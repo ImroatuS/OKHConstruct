@@ -21,11 +21,11 @@ public class HillClimbing {
           int randomC = r.nextInt(timeslot.length);
           int randomT=r.nextInt(totalTimeslot);        
           for(int j=0; j<matrik.length; j++){
-              if(matrik[randomC][j]!=0){
-                  if(timeslot[j]!=randomT){
+              if(matrik[randomC][j]!=0&&timeslot[j]!=randomT){
+                 
                      timeslot[randomC]=randomT;
                      s1=ev.evaluationFunction(matrik, timeslot, totalStudent);
-                  }
+                  
               }
           }
           if(s1<currentSolution)

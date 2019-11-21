@@ -37,16 +37,17 @@ public class DriverClass {
             10:hec-s-92.stu
             11:ear-f-83.stu
             12:sta-f-83.stu*/
-            int file=2;
+            
+            int file=4;
             String[] lines = rf.readLines(f.fileInputName(file));
            
            int [][]matrik =mc.createMatriks(f.totalCourse(file), lines);
            int []timeSlot=ts.graphColoring(matrik);
             of.outputMatrik( matrik, f.fileMatrikName(file));
          of.outputTimeSlot(timeSlot, f.fileTimeslotName(file));
-           // System.out.println(ev.evaluationFunction(matrik, timeSlot, lines.length));
+            System.out.println("ev "+ev.evaluationFunction(matrik, timeSlot, lines.length));
             
-            System.out.println(hc.resultHC(timeSlot, matrik, jmhTimeslot, lines.length));
+            System.out.println("hc "+hc.resultHC(timeSlot, matrik, jmhTimeslot, lines.length));
         }
         catch(IOException e)
         {
