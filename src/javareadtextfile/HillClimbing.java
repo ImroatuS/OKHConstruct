@@ -23,7 +23,7 @@ public class HillClimbing {
        int randomCourses, randomTimeslot;
        boolean abc =true;
       
-      for(int a=0; a<100000; a++){
+      for(int a=0; a<1000000; a++){
          System.out.println("iterasi ke "+a + ":    " +s );
           
           randomCourses = r.nextInt(timeslot.length-1);
