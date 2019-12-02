@@ -23,7 +23,7 @@ public class SimulatedAnealing {
           boolean abc =true;
       Random r =new Random();
        int randomCourses, randomTimeslot;
-        for (int i = 0; i < 500000; i++) {      
+        for (int i = 0; i < 1000000; i++) {      
            double rd = r.nextDouble();
              t=t-0.00005;
              double p;

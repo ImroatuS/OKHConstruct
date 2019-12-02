@@ -42,7 +42,7 @@ public class DriverClass {
             10:hec-s-92.stu
             11:ear-f-83.stu
             12:sta-f-83.stu*/
-            int file=0;
+            int file=6;
             //3 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 483
             String[] lines = rf.readLines(f.fileInputName(file));
            // mc.createMatriksKhusus(file, lines);
