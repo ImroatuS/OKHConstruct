@@ -6,7 +6,6 @@
 package javareadtextfile;
 
 import java.util.Random;
-import java.lang.Math;
 
 /**
  *

@@ -20,16 +20,14 @@ class ReadFile {
     {
         FileReader fileReader = new FileReader(filename);
          
-        BufferedReader bufferedReader = new BufferedReader(fileReader);
-        List<String> lines = new ArrayList<String>();
-        String line = null;
-         
-        while ((line = bufferedReader.readLine()) != null) 
-        {
-            lines.add(line);
-        }
-         
-        bufferedReader.close();
+        List<String> lines;
+         try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+             lines = new ArrayList<>();
+             String line;
+             while ((line = bufferedReader.readLine()) != null)
+             {
+                 lines.add(line);
+             }}
          
         return lines.toArray(new String[lines.size()]);
     }   

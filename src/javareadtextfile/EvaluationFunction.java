@@ -12,7 +12,7 @@ package javareadtextfile;
 public class EvaluationFunction {
     public double evaluationFunction(int [][]matrik, int[]timeslot, int totalStudent){
         double temp=0, w, ev, temp1=0;
-        int range=0;
+        int range;
       
           for(int i=0; i<matrik.length-1; i++){
                 for(int j=i+1; j<matrik.length; j++){ 

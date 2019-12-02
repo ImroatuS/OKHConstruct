@@ -61,7 +61,7 @@ class ArrayIndex {
         }
         int [] jmhd1;
         int [] jmhd2;
-        int degreeTerbesar =0;
+        int degreeTerbesar;
         for (int i = 0; i < timesSlot.length; i++) {
             
                 jmhd1=jumlahDegree(matrik);

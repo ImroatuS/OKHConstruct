@@ -62,35 +62,55 @@ public class VSN {
     }
     public boolean pilihIsFeasibleK(int pilih, int rCourse1, int rCourse2, int rCourse3,int rCourse4, int rTS1, int rTS2, int rTS3,int rTS4, int[] timeslot, int[][] matrik){
         boolean a =true;
-        if(pilih==0)
-            a=isFeasibleMove1(rCourse1, rTS1, timeslot, matrik);
-        else if(pilih==1)
-            a=isFeasibleMove2(rCourse1, rCourse2, rTS1, rTS2, timeslot, matrik);
-        else if(pilih==2)
-            a=isFeasibleMove3(rCourse1, rCourse2, rCourse3, rTS1, rTS2, rTS3, timeslot, matrik);
-        else if(pilih==3)
-            a=isFeasibleMove4(rCourse1, rCourse2, rCourse3, rCourse4, rTS1, rTS2, rTS3, rTS4, timeslot, matrik);
-        else if(pilih==4)
-            a=isFeasibleSwap1(rCourse1, rCourse2, timeslot, matrik);
-        else if(pilih==5)
-            a=isFeasibleSwap2(rCourse1, rCourse2, rCourse3, timeslot, matrik);
+        switch (pilih) {
+            case 0:
+                a=isFeasibleMove1(rCourse1, rTS1, timeslot, matrik);
+                break;
+            case 1:
+                a=isFeasibleMove2(rCourse1, rCourse2, rTS1, rTS2, timeslot, matrik);
+                break;
+            case 2:
+                a=isFeasibleMove3(rCourse1, rCourse2, rCourse3, rTS1, rTS2, rTS3, timeslot, matrik);
+                break;
+            case 3:
+                a=isFeasibleMove4(rCourse1, rCourse2, rCourse3, rCourse4, rTS1, rTS2, rTS3, rTS4, timeslot, matrik);
+                break;
+            case 4:
+                a=isFeasibleSwap1(rCourse1, rCourse2, timeslot, matrik);
+                break;
+            case 5:
+                a=isFeasibleSwap2(rCourse1, rCourse2, rCourse3, timeslot, matrik);
+                break;
+            default:
+                break;
+        }
         return a;
     }
     public int [] generateSolution(int pilih, int rCourse1, int rCourse2, int rCourse3,int rCourse4, int rTS1, int rTS2, int rTS3,int rTS4,int [] timeSlot){
         int []timeSlotA = timeSlot;
          
-         if(pilih==0)
-            timeSlotA=generateSoltionMove1(rCourse1, rTS1, timeSlot);
-        else if(pilih==1)
-            timeSlotA=generateSoltionMove2(rCourse1, rCourse2, rTS1, rTS2, timeSlot);
-        else if(pilih==2)
-            timeSlotA=generateSoltionMove3(rCourse1, rCourse2, rCourse3, rTS1, rTS2, rTS3, timeSlot);
-        else if(pilih==3)
-            timeSlotA=generateSoltionMove4(rCourse1, rCourse2, rCourse3, rCourse4, rTS1, rTS2, rTS3, rTS4, timeSlot);
-        else if(pilih==4)
-            timeSlotA=generateSoltionSwap1(rCourse1, rCourse2, timeSlot);
-        else if(pilih==5)
-            timeSlotA=generateSoltionSwap2(rCourse1, rCourse2, rCourse3, timeSlot);
+        switch (pilih) {
+            case 0:
+                timeSlotA=generateSoltionMove1(rCourse1, rTS1, timeSlot);
+                break;
+            case 1:
+                timeSlotA=generateSoltionMove2(rCourse1, rCourse2, rTS1, rTS2, timeSlot);
+                break;
+            case 2:
+                timeSlotA=generateSoltionMove3(rCourse1, rCourse2, rCourse3, rTS1, rTS2, rTS3, timeSlot);
+                break;
+            case 3:
+                timeSlotA=generateSoltionMove4(rCourse1, rCourse2, rCourse3, rCourse4, rTS1, rTS2, rTS3, rTS4, timeSlot);
+                break;
+            case 4:
+                timeSlotA=generateSoltionSwap1(rCourse1, rCourse2, timeSlot);
+                break;
+            case 5:
+                timeSlotA=generateSoltionSwap2(rCourse1, rCourse2, rCourse3, timeSlot);
+                break;
+            default:
+                break;
+        }
   
         
         return timeSlotA;

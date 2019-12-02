@@ -9,27 +9,25 @@ package javareadtextfile;
  *
  * @author admin
  */
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class OuputFile {
     public void outputMatrik(int matrik[][], String file)throws IOException{
-        FileWriter m = new FileWriter(file);
-            for(int x=0; x<matrik.length; x++){
-                for(int y=0; y<matrik.length; y++){
-                 m.write(Integer.toString(matrik[x][y])+" ");
-            }
+        try (FileWriter m = new FileWriter(file)) {
+            for (int[] matrik1 : matrik) {
+                for (int y = 0; y<matrik.length; y++) {
+                    m.write(Integer.toString(matrik1[y]) + " ");
+                }
                 m.write("\n");
             }
-             m.close();
+        }
     }
     public void outputTimeSlot(int matrik[], String file)throws IOException{
-        FileWriter m = new FileWriter(file);
-     
-                for(int y=0; y<matrik.length; y++){
-                 m.write(Integer.toString(matrik[y])+" ");
-                }
-             m.close();
+        try (FileWriter m = new FileWriter(file)) {
+            for(int y=0; y<matrik.length; y++){
+                m.write(Integer.toString(matrik[y])+" ");
+            }
+        }
     }
 }

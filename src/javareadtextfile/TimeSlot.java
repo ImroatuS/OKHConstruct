@@ -91,8 +91,7 @@ public class TimeSlot {
 
 		// Print the solution 
                 int temp[]=new int [V];
-                for (int i = 0; i < V; i++)
-                    temp[i]=color[i];
+            System.arraycopy(color, 0, temp, 0, V);
 		
                 return temp;
 		
