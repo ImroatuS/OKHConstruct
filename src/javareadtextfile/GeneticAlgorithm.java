@@ -244,17 +244,22 @@ public class GeneticAlgorithm {
         
         return populationA;
     }
-    public void resultGA(int [] timeslot, int [][]matrik, int jumlahstudent, int maxTimesSlot){
-        for (int i = 0; i < 1000; i++) {
+    public int [] resultGA(int [] timeslot, int [][]matrik, int jumlahstudent, int maxTimesSlot){
+        int a[]=new int [matrik.length];
+        for (int i = 0; i < 500; i++) {
         int [][] initialSolution = generateInitialSolution(timeslot, matrik);
         double[] ev = evaluasiChromosome(initialSolution, matrik, jumlahstudent);
         int [][] resultSelection =selection(initialSolution, ev);
         int [][]resultCrossOver = crossOver(resultSelection, matrik, jumlahstudent);
         int [][]resultMutasi = Mutasi(resultCrossOver, matrik, maxTimesSlot);
+        
+          for(int j=0;j<matrik.length; j++){
+              a[j]=resultMutasi[0][j];
+          }
         double[] evend = evaluasiChromosome(resultMutasi, matrik, jumlahstudent);
        Arrays.sort(evend);
-        System.out.println(i +": "+ev[0]);
+        System.out.println(ev[0]);
         }
-        
+      return a;
     }
 }

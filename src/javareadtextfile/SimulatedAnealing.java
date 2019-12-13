@@ -13,7 +13,7 @@ import java.lang.Math;
  * @author admin
  */
 public class SimulatedAnealing {
-    public void resultSA(int []timeslotA, int [][]matrik, int totalStudent,int totalTimeslot){
+    public int [] resultSA(int []timeslotA, int [][]matrik, int totalStudent,int totalTimeslot){
          EvaluationFunction ev = new EvaluationFunction();
          int [] timeslot = timeslotA;
          int [] timeslotf= timeslotA;
@@ -23,7 +23,7 @@ public class SimulatedAnealing {
           boolean abc =true;
       Random r =new Random();
        int randomCourses, randomTimeslot;
-        for (int i = 0; i < 100000; i++) {      
+        for (int i = 0; i < 500000; i++) {      
            double rd = r.nextDouble();
              t=t-0.00005;
              double p;
@@ -51,10 +51,10 @@ public class SimulatedAnealing {
                }}
              
            
-            System.out.println("iterasi ke "+i + ":    " +s );
+            System.out.println(s );
 
         }
-        
+        return timeslot;
     }
     
     

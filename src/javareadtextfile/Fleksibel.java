@@ -34,19 +34,19 @@ public class Fleksibel {
     public String fileMatrikName(int i){
         String fileName="";
      
-         String [] name = new String[]{"D:/matkul ITS/semester 7/OKH/Matrik/car-f-92.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/car-s-91.txt",
-                                         "D:/matkul ITS/semester 7/OKH/Matrik/uta-s-92.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/rye-s-93.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/pur-s-93.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/ute-s-92.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/tre-s-92.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/lse-f-91.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/kfu-s-93.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/yor-f-83.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/hec-s-92.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/ear-f-83.txt",
-                                        "D:/matkul ITS/semester 7/OKH/Matrik/sta-f-83.txt"};
+         String [] name = new String[]{"D:/Kuliah/OKH/Matrik/car-f-92.txt",
+                                        "D:/Kuliah/OKH/Matrik/car-s-91.txt",
+                                         "D:/Kuliah/OKH/Matrik/uta-s-92.txt",
+                                        "D:/Kuliah/OKH/Matrik/rye-s-93.txt",
+                                        "D:/Kuliah/OKH/Matrik/pur-s-93.txt",
+                                        "D:/Kuliah/OKH/Matrik/ute-s-92.txt",
+                                        "D:/Kuliah/OKH/Matrik/tre-s-92.txt",
+                                        "D:/Kuliah/OKH/Matrik/lse-f-91.txt",
+                                        "D:/Kuliah/OKH/Matrik/kfu-s-93.txt",
+                                        "D:/Kuliah/OKH/Matrik/yor-f-83.txt",
+                                        "D:/Kuliah/OKH/Matrik/hec-s-92.txt",
+                                        "D:/Kuliah/OKH/Matrik/ear-f-83.txt",
+                                        "D:/Kuliah/OKH/Matrik/sta-f-83.txt"};
          for(int j=0; j<name.length; j++){
             if(j==i)
                 fileName=name[j];
@@ -55,19 +55,19 @@ public class Fleksibel {
     }
     public String fileTimeslotName(int i){
         String fileName="";
-             String [] name = new String[]{"D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/Carleton92.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/Carleton91.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/TorontoAS92.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/rye-s-93.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/pur-s-93.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/TorontoE92.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/Trent92.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/LSE91.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/KingFahd93.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/YorkMills83.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/EdHEC92.sol",
-                                            "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/EarlHaig83.sol",
-                                           "D:/matkul ITS/semester 7/OKH/ExamTimeTableEvaluation/St.Andrews83.sol"
+             String [] name = new String[]{"D:/Kuliah/OKH/ExamTimeTableEvaluation/Carleton92.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/Carleton91.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/TorontoAS92.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/rye-s-93.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/pur-s-93.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/TorontoE92.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/Trent92.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/LSE91.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/KingFahd93.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/YorkMills83.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/EdHEC92.sol",
+                                            "D:/Kuliah/OKH/ExamTimeTableEvaluation/EarlHaig83.sol",
+                                           "D:/Kuliah/OKH/ExamTimeTableEvaluation/St.Andrews83.sol"
                                             };
          for(int j=0; j<name.length; j++){
             if(j==i)
